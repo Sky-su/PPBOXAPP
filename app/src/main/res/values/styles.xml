@@ -1,0 +1,87 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--  QMUI application theme-->
+    <style name="QMUIAppTheme" parent="QMUI.Compat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!--        <item name="colorPrimary">@color/colorbj</item>-->
+        <!--        <item name="colorPrimaryDark">@color/colorbj</item>-->
+        <!--        <item name="colorAccent">@color/colorbj</item>-->
+        <!--        <item name="android:dropDownListViewStyle">@style/XSpinnerStyle</item>-->
+    </style>
+
+
+    //登录界面
+
+    <style name="showTheme">
+        <item name="android:textSize">36sp</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="Login_Edit" >
+        <item name="android:layout_marginStart">45dp</item>
+        <item name="android:layout_marginEnd">45dp</item>
+        <item name="android:paddingTop">20px</item>
+        <item name="android:paddingBottom">20px</item>
+        <item name="android:textColor">#FF003768</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColorHint">#666666</item>
+        <item name="android:background">@drawable/button_login_edit</item>
+    </style>
+
+
+    <style name="textbj">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name= "android:layout_marginEnd">10dp</item>
+    </style>
+    <style name="item_showtasklisttext">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColorHint">#FFEC6E32</item>
+        <item name="android:layout_marginEnd">2dp</item>
+        <item name="android:textColor">@color/colorTableLine</item>
+    </style>
+    <style name="item_showtasklisttitleone">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#FF333333</item>
+    </style>
+    <style name="item_showtasklisttitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#FF333333</item>
+    </style>
+
+    <!--提示框左边按钮-->
+    <style name="dialog_button_no">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/brown3</item>
+        <item name="android:background">@drawable/button_login_edit</item>
+    </style>
+    <!--提示框右边按钮-->
+    <style name="dialog_button_yes">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/colorblack</item>
+        <item name="android:background">@drawable/button_round_clean</item>
+    </style>
+</resources>

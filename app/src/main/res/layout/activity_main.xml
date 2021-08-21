@@ -1,0 +1,150 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="#1C568F">
+        <TextView
+            android:text="容器转移"
+            android:textColor="#fff"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1C486E" />
+    </com.qmuiteam.qmui.widget.QMUITopBar>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/provenancehit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_weight="0.45"
+            android:textSize="18sp"
+            android:text="从"
+            android:textColorHint="@color/colorTableLine"
+            android:gravity="left"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <TextView
+            android:id="@+id/provenance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:hint="来源"
+            android:textColorHint="@color/colorTableLine"
+            android:gravity="left"
+            app:layout_constraintTop_toTopOf="@id/provenancehit"
+            app:layout_constraintStart_toEndOf="@+id/provenancehit"/>
+
+        <View
+            android:id="@+id/main_div_line"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="@color/div_gray"
+            android:layout_margin="2dp"
+            android:paddingEnd="12dp"
+            app:layout_constraintEnd_toStartOf="@id/readCount"
+            app:layout_constraintStart_toStartOf="@id/provenancehit"
+            app:layout_constraintTop_toBottomOf="@id/provenancehit"/>
+        <TextView
+            android:id="@+id/destinationhit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:text="到"
+            android:textColorHint="@color/colorTableLine"
+            android:gravity="left"
+            app:layout_constraintTop_toBottomOf="@+id/main_div_line"
+            app:layout_constraintStart_toStartOf="@+id/provenancehit"/>
+        <TextView
+            android:id="@+id/destination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:hint="目的地"
+            android:textColorHint="@color/colorTableLine"
+            android:gravity="left"
+            app:layout_constraintTop_toTopOf="@id/destinationhit"
+            app:layout_constraintStart_toEndOf="@+id/destinationhit"/>
+
+
+        <TextView
+            android:id="@+id/readCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="000"
+            android:padding="6dp"
+            android:layout_margin="2dp"
+            android:textSize="56sp"
+            android:textColor="@color/brown3"
+            android:background="@drawable/button_he"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/provenancehit"
+            app:layout_constraintBottom_toBottomOf="@+id/destinationhit" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/boxlistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="58dp"/>
+
+        <LinearLayout
+            android:id="@+id/linearbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="5dp">
+            <Button
+                android:id="@+id/cleanbutton"
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                style="@style/dialog_button_no"
+                android:text="清空" />
+
+            <Button
+                android:id="@+id/submitbutton"
+                style="@style/dialog_button_yes"
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:text="转移" />
+        </LinearLayout>
+
+        <!--使背景变灰-->
+        <View
+            android:id="@+id/main_darkview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/dark_bg"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="brown3">#31042f</color>
+    <color name="gray3">#e2dbe2</color>
+
+    //背景
+    <color name="colorblack">#FFFFFF</color>
+    <color name="background">#FFF2F4F5</color>
+    <color name="colortextmeum">#FF003768</color>
+    <color name="color_blue">#2196F3</color>
+    <color name="color_green">#4CAF50</color>
+    <color name="color_gray">#9FA6AC</color>
+    <color name="darkGray">#A9A9A9</color>
+    <color name="colorchange0">#8284F8</color>
+    <color name="colorchange100">#5D97FF</color>
+    <color name="blue">#0000ff</color><!--蓝色 -->
+    <color name="colorREAD">#FF4081</color>
+    <color name="colorStyle">#252A2F</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorLoginLeft">#57EAAB</color>
+    <color name="colorLoginCentet">#4EE1C5</color>
+    <color name="colorDataYesText">#00fffc</color>
+    <color name="colorLoginRight">#45D7DF</color>
+    <color name="colorAboutText">#adb9e5</color>
+    <color name="colorHomeButton2">#adb9e5</color>
+    <color name="colorDialogContent">#3a4e7b</color>
+    <color name="colorDialogContent2">#314672</color>
+    <color name="colorTableLine">#0a132c</color>
+    <color name="colerUserText">#555555</color>
+    <color name="colorEditText">#04a0ff</color>
+    <color name="colorDialogTitleBG">#0078ff</color>
+    <color name="colorDialogButtonYes1">#489eff</color>
+    <color name="colorDataNoText">#ffff4c</color>
+    <color name="colorEditNoTextSelect">#90a0cd</color>
+    <color name="colorEditNoBgSelect">#151c32</color>
+    ////
+    <color name="dark_bg">#8000</color>
+
+    <color name="popup_left_bg">#eee</color>
+    <color name="popup_right_bg">#ddd</color>
+    <color name="popup_right_bg_selected">#ccc</color>
+
+    <color name="div_gray">#ccc</color>
+</resources>

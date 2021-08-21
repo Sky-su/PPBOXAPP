@@ -1,0 +1,6 @@
+<resources>
+    <declare-styleable name="FindBar">
+        <attr name="percent" format="float" />
+        <attr name="color" format="color" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidepda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+    <TextView
+        android:id="@+id/tex1"
+        style="@style/showTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/showWelcome"
+        android:textColor="#FF003768"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guidepda" />
+
+
+    <EditText
+        android:id="@+id/login_user"
+        style="@style/Login_Edit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:hint="请输入用户名"
+        android:lines="1"
+        android:text="admin"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tex1" />
+
+    <EditText
+        android:id="@+id/login_PASSword"
+        style="@style/Login_Edit"
+        android:layout_width="0dp"
+        android:textSize="23sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="输入密码"
+        android:singleLine="true"
+        android:text="123456"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_user" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:text="登录"
+        android:textSize="28sp"
+        android:textColor="@color/background"
+        android:background="@drawable/button_round_clean"
+        app:layout_constraintTop_toBottomOf="@+id/login_PASSword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
